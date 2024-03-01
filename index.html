@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaCards | FlashCard Quiz System</title>
+    <link rel="stylesheet" href="quiztm.css">
+    <link rel="icon" href="logo.png">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+</head>
+<body>
+    <main class="main">
+        <header class="header">
+            <a href="#" class="logo">JavaCards</a>
+            <nav class="nav-links">
+                <a href="#" id="active" class="nele">Home</a>
+                <a class="nele" href="#"> 
+                        <span>About</span>
+                        <div class="abt">
+                            <ul>
+                                <li>Explore the World of FlashCard Quizzes!</li>
+                                <li>Welcome to JavaCards, your gateway to an exciting world of knowledge, fun, and discovery into our captivating collection of cards covering a wide range of topics regarding Java Programming Language to niche interests.</li>
+                            </ul>
+                        </div>
+                </a>
+                <a href="CREATE.html" class="nele">Create</a>
+                <a class="nele" href="#">Contact</a>
+                <button class="adminButton" onclick="admlog()">Admin</button>
+            </nav>
+        </header>
+        <div class="container">
+            <section class="quiz">
+                <div class="quizbox">
+                    <h1>Quiz Page</h1>
+                    <div class="quizhead">
+                        <span> Flashcard Quiz for Reviewing</span>
+                        <span class="score">Score : 0/5</span>
+                    </div>
+
+                     <h2 class="ques">What does HTML stands for?</h2>
+
+                    <div class="optionslst">
+                    </div>
+                    <div class="quizfooter">
+                        <span class="questotal">1 of 5 Questions</span>
+                        <button class="next">Next</button>
+                    </div>
+                </div>
+                <div class="resbox">
+                    <h2> Quiz Result!</h2>
+                    <div class="percentage">
+                        <div class="circular">
+                            <span class="provalue">0%</span>
+                        </div>
+                        <span class="scoreText">Your Score 0 out of 10</span>
+                
+                    </div>
+
+                    <div class="buttons">
+                        <button class="trybut">Try Again</button>
+                        <button class="gohome">Go To Home</button>
+                    </div>
+                </div>
+            </section>
+            <section class="home">
+                <div class="homecont">
+                    <h1>JavaCards</h1>
+                    <p>Welcome to JavaCards, your gateway to an exciting world of knowledge, fun, and discovery. Dive into our collection of flashcard quizzes covering a wide range of topics regarding Java Programming Language to niche interests.</p>
+                    <button class="stbtn">Start Quiz</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="popup">
+        <h2>Quiz Guide</h2>
+        <span class="info">Take your time and understand the questions before choosing an answer.</span>
+        <span class="info">There's no time limit, so enjoy the quiz at your own pace.</span>
+        <span class="info">There's no negative markings.</span>
+        <span class="info">Our quizzes aim to entertain and educate.</span>
+        <span class="info">Share your results and challenge friends to beat your score.</span>
+        <div class="btns">
+            <button class="bt" onclick="exi()">Exit Quiz</button>
+            <a href="#" class="bt" id="continue">Continue</a>
+        </div>
+    </div>
+
+    <div class="popup2">
+        <h2>Ready to Start!</h2>
+        <div class="iniya"><input class="nameinp" placeholder="Enter your name" type="text" required></div>
+        <div class="iniya"><input id="rollinp" placeholder="RollNo" type="text" required></div>
+        <div class="terms">
+            
+            <input class="check" type="checkbox">
+            <span class="inf">By clicking You are accepeting the <a href="#" class="condit">Terms & Conditions</a><li class="termsandcondi">Will be revealed Soon!</li></span>
+        </div>
+        <div class="btns">
+            <button class="bt2" onclick="exi()">Exit Quiz</button>
+            <a href="#" class="bt2" id="ready">Ready</a>
+        </div>
+    </div>
+    <div class="adminlog">
+            <div class="img"><img src="adminpor.png" alt="Admin img"><button class="x" onclick="exi()">Close X</button></div>
+            <div class="h"><h2>Welcome to Admin panel</h2></div>
+            <span>Enter your LogIn credentials</span>
+        
+        <input type="text" id="adminName" class="adminname" placeholder="@Username"> 
+        <input type="password" id="adminPass" class="adminpass" placeholder="Password">
+        <div class="b"><button onclick="auth()" class="log">Login</button></div>
+        <span class="forgot"><a href="#">Forgot</a> Password?</span>
+    </div>
+    <script src="quiztm.js"></script>
+    <script src="questions.js"></script>
+</body>
+</html>
