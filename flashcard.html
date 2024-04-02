@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flashcards</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="flashStyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <script src="scripts.js" defer></script>
+    </head>
+       <body>
+        <header class="top-nav-sticky-wrapper">
+            <div class="top-nav-left playfair-display-logo">JavaCards</div>
+            <div class="top-nav-left">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./index.html#topic-sel">Create</a></li>
+                        <!-- <li><a href="./index.html#how-it-works">How to</a></li> -->
+                        <li><a href="#">Admin</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <!-- <button type="submit"><i class="fa fa-search"></i>Search</button> -->
+                    <input type="text" placeholder="Search.." name="search">
+                </form>
+            </div>
+    </header>
+    <main>
+        <section id="flashcard-main-wrapper">
+            <div id="card1" class="flashcard flipped active">
+                <div class="card-content">
+                    <div class="front">
+                        <img src="hint-bulb.png" alt="bulb" class="bulb-icon"/>
+                        <img src="speaker.png" alt="speaker" class="speaker-icon"/>
+                        <p>Main building block in Java. Contains members, including fields and
+methods. Classes are the “blueprint” for creating objects.</p>
+                    </div>
+                    <div class="back">
+                        <img src="hint-bulb.png" alt="bulb" class="bulb-icon"/>
+                        <img src="speaker.png" alt="speaker" class="speaker-icon"/>
+                        <p>What is a Class?</p>
+                    </div>
+                </div>
+            </div>
+            <div id="card2" class="flashcard flipped">
+                <div class="card-content">
+                    <div class="front">
+                        <img src="hint-bulb.png" alt="bulb" class="bulb-icon"/>
+                        <img src="speaker.png" alt="speaker" class="speaker-icon"/>
+                        <p>Prints statement and creates new line</p>
+                    </div>
+                    <div class="back">
+                        <img src="hint-bulb.png" alt="bulb" class="bulb-icon"/>
+                        <img src="speaker.png" alt="speaker" class="speaker-icon"/>
+                        <p>System.out.println</p>
+                    </div>
+                </div>
+            </div>
+            <div id="card3" class="flashcard flipped">
+                <div class="card-content">
+                    <div class="front">
+                        <img src="hint-bulb.png" alt="bulb" class="bulb-icon"/>
+                        <img src="speaker.png" alt="speaker" class="speaker-icon"/>
+                        <p>Statements = body of while loop; braces not needed for a single statement</p>
+                    </div>
+                    <div class="back">
+                        <img src="hint-bulb.png" alt="bulb" class="bulb-icon"/>
+                        <img src="speaker.png" alt="speaker" class="speaker-icon"/>
+                        <p>while (condition) {statements} </p>
+                    </div>
+                </div>
+            </div>
+            <div id="card4" class="flashcard flipped">
+                <div class="card-content">
+                    <div class="front">
+                        <img src="hint-bulb.png" alt="bulb" class="bulb-icon"/>
+                        <img src="speaker.png" alt="speaker" class="speaker-icon"/>
+                        <p>It gives the length of the array (no parentheses!)</p>
+                    </div>
+                    <div class="back">
+                        <img src="hint-bulb.png" alt="bulb" class="bulb-icon"/>
+                        <img src="speaker.png" alt="speaker" class="speaker-icon"/>
+                        <p>array.length</p>
+                    </div>
+                </div>
+            </div>
+            <div id="card5" class="flashcard flipped">
+                <div class="card-content">
+                    <div class="front">
+                        <img src="hint-bulb.png" alt="bulb" class="bulb-icon"/>
+                        <img src="speaker.png" alt="speaker" class="speaker-icon"/>
+                        <p>This syntax declares and inputs a line (a string of characters)</p>
+                    </div>
+                    <div class="back">
+                        <img src="hint-bulb.png" alt="bulb" class="bulb-icon"/>
+                        <img src="speaker.png" alt="speaker" class="speaker-icon"/>
+                        <p>String s = in.nextLine();</p>
+                    </div>
+                </div>
+            </div>
+            <div id="card6" class="flashcard flipped">
+                <div class="card-content">
+                    <div class="front">
+                        <img src="hint-bulb.png" alt="bulb" class="bulb-icon"/>
+                        <img src="speaker.png" alt="speaker" class="speaker-icon"/>
+                        <p>Make sure you encode what you learn through text with visuals and what you learn through visuals with text. There is no preferred learning style but rather try to use all of them to learn effectively.</p>
+                    </div>
+                    <div class="back">
+                        <img src="hint-bulb.png" alt="bulb" class="bulb-icon"/>
+                        <img src="speaker.png" alt="speaker" class="speaker-icon"/>
+                        <p>What is Static Method?</p>
+                    </div>
+                </div>
+            </div>
+            <div id="card7" class="flashcard flipped">
+                <div class="card-content">
+                    <div class="front">
+                        <img src="hint-bulb.png" alt="bulb" class="bulb-icon"/>
+                        <img src="speaker.png" alt="speaker" class="speaker-icon"/>
+                        <p> This imports Scanner library </p>
+                    </div>
+                    <div class="back">
+                        <img src="hint-bulb.png" alt="bulb" class="bulb-icon"/>
+                        <img src="speaker.png" alt="speaker" class="speaker-icon"/>
+                        <p>import java.util.Scanner</p>
+                    </div>
+                </div>
+            </div>
+            <div id="card8" class="flashcard flipped">
+                <div class="card-content">
+                    <div class="front">
+                        <img src="hint-bulb.png" alt="bulb" class="bulb-icon"/>
+                        <img src="s" alt="speaker" class="speaker-icon"/>
+                        <p>Declares and inputs integer value</p>
+                    </div>
+                    <div class="back">
+                        <img src="hint-bulb.png" alt="bulb" class="bulb-icon"/>
+                        <img src="speaker.png" alt="speaker" class="speaker-icon"/>
+                        <p>int i = in.nextInt();</p>
+                    </div>
+                </div>
+            </div>
+            <div id="card9" class="flashcard flipped">
+                <div class="card-content">
+                    <div class="front">
+                        <img src="hint-bulb.png" alt="bulb" class="bulb-icon"/>
+                        <img src="speaker.png" alt="speaker" class="speaker-icon"/>
+                        <p>declares Scanner "in"</p>
+                    </div>
+                    <div class="back">
+                        <img src="hint-bulb.png" alt="bulb" class="bulb-icon"/>
+                        <img src="speaker.png" alt="speaker" class="speaker-icon"/>
+                        <p> Scanner in = new Scanner(System.in); </p>
+                    </div>
+                </div>
+            </div>
+            <div id="card10" class="flashcard flipped">
+                <div class="card-content">
+                    <div class="front">
+                        <img src="hint-bulb.png" alt="bulb" class="bulb-icon"/>
+                        <img src="speaker.png" alt="speaker" class="speaker-icon"/>
+                        <p>Do/while loop</p>
+                    </div>
+                    <div class="back">
+                        <img src="hint-bulb.png#" alt="bulb" class="bulb-icon"/>
+                        <img src="speaker.png" alt="speaker" class="speaker-icon"/>
+                        <p>do {
+i++;
+//more code
+}while (i>max)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="controller">
+                <button id="prev">Previous</button>
+                <button id="next">Next</button>
+            </div>
+        </section>
+        <div id="footer-divider">
+        </div>
+        <footer id="flash-footer">
+            <h3>&copy; 2024 JavaCards. All rights reserved.</h3>
+        </footer>
+        <!-- <div id="card2" class="flashcard">
+            <div class="card-content">
+                <div class="front">Term or Question at the Front.</div>
+                <div class="back">Solution for the question at the Back.</div>
+            </div>
+            <div class="controller">
+                <div class="autoplay"></div>
+                <div class="next-back"></div>
+                <div class="shuffle"></div>
+            </div>
+        </div>
+        <div id="card3" class="flashcard">
+            <div class="card-content">
+                <div class="front">Term or Question at the Front.</div>
+                <div class="back">Solution for the question at the Back.</div>
+            </div>
+            <div class="controller">
+                <div class="autoplay"></div>
+                <div class="next-back"></div>
+                <div class="shuffle"></div>
+            </div>
+        </div> -->
+    </main>
+    </body>
+</html>
+
