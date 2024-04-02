@@ -77,7 +77,9 @@ li a{
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: #161618;
+  background-image: url('bg1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .container {
   width: 90vw;
